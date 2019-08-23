@@ -9,7 +9,7 @@ import axios from 'axios';
   //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
 
    useEffect(() => {
-    axios.get('https://rickandmortyapi.com/api/episode/')
+    // axios.get('https://rickandmortyapi.com/api/episode/')
       .then(results => {
         console.log('results', results.data.results)
         setEpisodes(results.data.results)

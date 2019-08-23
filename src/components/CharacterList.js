@@ -7,7 +7,7 @@ export default function CharacterList() {
 
   useEffect(() => {
     axios
-    .get('https://rickandmortyapi.com/api/character/')
+    // .get('https://rickandmortyapi.com/api/character/')
     .then(response => {
       setCharacters(response.data.results)
     })
