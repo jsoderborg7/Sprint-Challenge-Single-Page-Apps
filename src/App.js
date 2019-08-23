@@ -14,10 +14,10 @@ export default function App() {
     <main>
       <Header />
       <TabNav />
+      <Route exact path="/" component={WelcomePage} />
       <Route exact path="/character" component={CharacterList} />
       <Route exact path="/location" component={LocationList} />
       <Route exact path="/episode" component={EpisodeList} />
-      <WelcomePage />
     </main>
   );
 }
