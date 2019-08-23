@@ -1,14 +1,12 @@
 import React from "react";
 
 
-const LocationCard = props => {
-  return (
-    <div className="locationCard">
-      <h2>{props.name}</h2>
-      <p>{props.type}</p>
-      <p>{props.dimension}</p>
-      <p>{props.residents}</p>
+export default function LocationCard ({name, type, dimension}){
+  return(
+    <div>
+      {name}
+      {type}
+      {dimension}
     </div>
   )
 }
-export default LocationCard;

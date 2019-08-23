@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
 
-const CharacterList= () => {
+export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
@@ -21,4 +21,3 @@ const CharacterList= () => {
     </section>
   );
 }
-export default CharacterList;

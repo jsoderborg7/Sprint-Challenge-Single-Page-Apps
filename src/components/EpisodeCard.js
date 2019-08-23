@@ -1,14 +1,13 @@
-import React from "react";
+import React from 'react'
 
+ export default function EpisodeCard ({ id, name, air_date, episode }) {
 
-const EpisodeCard = props => {
-  return (
-    <div className="episodeCard">
-      <h2>{props.name}</h2>
-      <p>{props.air_date}</p>
-      <p>{props.episode}</p>
-      <p>{props.characters}</p>
+   return (
+    <div>
+      {name}
+      {episode}
+      {id}
+      {air_date}
     </div>
   )
 }
-export default EpisodeCard;
