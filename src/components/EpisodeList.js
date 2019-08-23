@@ -17,6 +17,7 @@ import axios from 'axios';
   }, [])
 
    return <section className='character-list grid-view'>
+     <h1>Episodes</h1>
       { episodes.map(episode => {
         return <EpisodeCard key={episode.id} {...episode} />;
       })}
