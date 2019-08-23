@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
-
+import styled from "styled-components";
 
 export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
@@ -16,10 +16,9 @@ export default function CharacterList() {
 
   return (
     <section className="character-list grid-view">
-      <h1>Characters</h1>
-        {characters.map(char => {
-          return <CharacterCard key={char.id} {...char} />;
-        })}
+            {characters.map(char => {
+              return <CharacterCard key={char.id} {...char} />;
+            })}
     </section>
   );
 }
